@@ -1,13 +1,8 @@
 var updateExpression
-
 createExpresssion =(btnChar)=>{
-
     var currentExppression= document.getElementsByTagName('p')[0].innerHTML;
-  
-    //check if btnChar is nan
         //if btnchar is nan check is == to last character of
     if(isNaN(btnChar)==false){
-
         updateExpression=currentExppression.concat(btnChar);
         document.getElementsByTagName('p')[0].innerHTML=updateExpression;  
     }else{
@@ -23,14 +18,19 @@ createExpresssion =(btnChar)=>{
             document.getElementsByTagName('p')[0].innerHTML=updateExpression;  
         }
     }   
-    
-    //let ans=eval(updateExpression)
-    //console.log(ans);
-        //else do nothing
 }//end create expression
 
+cls=()=>{
+    updateExpression='';
+    document.getElementsByTagName('p')[0].innerHTML=updateExpression;  
+}
+
+back=()=>{
+    updateExpression=updateExpression.slice(0, updateExpression.length - 1);
+    document.getElementsByTagName('p')[0].innerHTML=updateExpression;  
+}
+
 evaluateExpression=()=>{
-    console.log(updateExpression)
     let ans=eval(updateExpression)
     document.getElementsByTagName('p')[0].innerHTML=ans; 
 }
