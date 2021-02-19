@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/functions.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="layout-area">
+        <div class="display">
+            <p class="display-value"></p>
+        </div>
+        <div class="buttons">
+            <div class="buttons-row">
+                <button class="keys" >c</button>
+                <button class="keys">back</button>
+                <button class="keys" onclick="createExpresssion('\*')">*</button>
+                <button class="keys" onclick="createExpresssion('\\')">\</button>
+            </div>
+            <div class="buttons-row">
+                <button class="keys" onclick="createExpresssion('6')">6</button>
+                <button class="keys" onclick="createExpresssion('7')">7</button>
+                <button class="keys" onclick="createExpresssion('8')">8</button>
+                <button class="keys" onclick="createExpresssion('\-')">-</button>
+            </div>
+            <div class="buttons-row">
+                <button class="keys" onclick="createExpresssion('3')">3</button>
+                <button class="keys" onclick="createExpresssion('4')">4</button>
+                <button class="keys"  onclick="createExpresssion('5')">5</button>
+                <button class="keys" onclick="createExpresssion('\+')">+</button>
+            </div>
+            <div class="buttons-row">
+                <button class="keys" onclick="createExpresssion('0')">0</button>
+                <button class="keys" onclick="createExpresssion('1')">1</button>
+                <button class="keys"  onclick="createExpresssion('2')">2</button>
+                <button class="keys" onclick="evaluateExpression()" >=</button>
+            </div>
+           
+            
+            
+        </div>
+    </div>
+</body>
+</html>
